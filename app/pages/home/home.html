@@ -18,4 +18,9 @@
   <button block (click)="openMenu()">
     Show Action Sheet
   </button>
+  <button (click)="changeMsg()">changeValue</button>
+  <div>
+  	<input (keyup)="onKey($event)" style="background-color: yellow;" value="{{onKeyValue}}">
+	<p>{{onKeyValue}}</p>
+  </div>
 </ion-content>

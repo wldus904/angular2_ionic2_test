@@ -20,6 +20,7 @@ export class HomePage {
         this.cordovaOauth = new CordovaOauth(new Facebook({clientId: "CLIENT_ID_HERE", appScope: ["email"]}));
         
         this.aa = "jy_test project!";// aa에 값 저장
+        this.onKeyValue = "avdf";
     }
 	
 	login() {
@@ -31,6 +32,15 @@ export class HomePage {
             });
         });
     }
+	
+	onKey(event) {
+		this.onKeyValue = event.target.value;
+	}
+	
+	changeMsg() {
+		alert("change!");
+		this.aa = "you click changeValue!";
+	}
 	
 	openMenu() {
 	    let actionSheet = ActionSheet.create({
