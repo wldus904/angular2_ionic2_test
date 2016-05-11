@@ -10,7 +10,7 @@ export class MyApp {
   static get parameters() {
     return [[Platform]];
   }
-
+  
   constructor(platform) {
     this.rootPage = HomePage;
 
